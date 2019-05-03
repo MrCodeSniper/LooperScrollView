@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:background="@mipmap/common_icon_fans_talk_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </RelativeLayout>
+
+        <com.codesniper.looper.main.LooperScrollContainer
+            android:layout_marginTop="20dp"
+            android:id="@+id/looperSrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+
+        </com.codesniper.looper.main.LooperScrollContainer>
+
+
+        <com.codesniper.looperscrollview.view.MovingCard
+            android:id="@+id/moving_card"
+            android:layout_marginTop="92dp"
+            android:background="@mipmap/common_talk_card_bg"
+            android:layout_width="match_parent"
+            android:layout_height="215dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_user_info"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="28dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.codesniper.looper.widget.CircleImageView
+                    android:id="@+id/iv_icon"
+                    android:src="@color/bg_grey"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/text_item_33"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/tv_user_career"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:ems="7"
+                    android:singleLine="true"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/color_ff666666"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_alignTop="@+id/ll_user_info"
+                android:id="@+id/tv_user_word"
+                android:layout_above="@+id/tv_income"
+                android:textSize="12sp"
+                android:textColor="@color/text_item_33"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:lineSpacingExtra="2dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/ll_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_income"
+                android:layout_marginBottom="7dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/tv_author"
+                android:layout_above="@+id/tv_author"
+                android:textColor="@color/text_item_33"
+                android:textSize="12sp"
+                android:text="上月收益 ¥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/color_black_999"
+                android:layout_height="wrap_content"
+                android:text="*公开收益信息已获得会员同意"
+                />
+
+
+        </com.codesniper.looperscrollview.view.MovingCard>
+
+    </RelativeLayout>
+
+</LinearLayout>
